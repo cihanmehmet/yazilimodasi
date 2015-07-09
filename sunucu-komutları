@@ -1,0 +1,29 @@
+*Mysql üzerinde işlem yapabilmek için mysql servisini kapatmalıyız*
+   sudo service mysql stop > prefix text with >
+sudo /etc/init.d/mysql stop >
+  * CentOS, Fedora, ve RHEL için komut şudur:*
+sudo /etc/init.d/mysqld stop >
+*Mysql servisini güvenli modda başlatmalıyız*
+   sudo mysqld_safe --skip-grant-tables &>
+*Mysql ile oturum açarız*
+  mysql -u root>
+*Şifre işlemlerinin tutulduğu sql'i seçeriz*
+   use mysql;>
+*Şifreyi güncellemek için gerekli kod*
+update user set password=PASSWORD("YENİ ŞİFRE") where user='root';>
+*Veritabanına değişikleri uygulaması için;*
+  flush privileges; >
+*Mysql servisi tekrardan başlatılmalı*
+Ubuntu ve Debian sistemlerde:
+sudo service mysql start >
+sudo service mysql restart
+sudo /etc/init.d/mysql stop
+sudo /etc/init.d/mysql start>
+*CentOS, Fedora ve RHEL sistemlerde:*
+sudo /etc/init.d/mysqld restart>
+sudo /etc/init.d/mysqld stop
+sudo /etc/init.d/mysql start>
+*Oturum Açma*
+*Yapılan değişiklerin doğru yapılıp yapılmadığını kontrol ediniz 
+mysql -u root -p>
+yeni şifrenizi girmeniz lazım
