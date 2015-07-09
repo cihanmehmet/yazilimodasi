@@ -1,0 +1,135 @@
+===========================================================================================
+sudo iptables -L
+sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+cat /etc/services | grep 22
+===========================================================================================
+Hangi servere mail göndereceğini DNS'nin MX kaydına bakarak gönderir
+===========================================================================================
+Sunucuya bağlı ip adreslerini verir
+
+netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n
+===========================================================================================
+ps -ef | grep java ->javayla ilgili çalışan komutları ekrana getirir
+===========================================================================================
+Linux Memory Information
+free -m 
+cat /proc/meminfo
+vmstat -s
+Ram İnformation
+sudo dmidecode -t 17
+===========================================================================================
+Donaımları Listeler
+sudo lshw -short
+hwinfo --short
+===========================================================================================
+lspci -v | grep "VGA" -A 12
+lsusb
+inxi -Fx ->sistem bilgisi verir
+df -H ->diskleri ve kullanım miktarlarını gösterir
+===========================================================================================
+mount | column -t | grep ext
+===========================================================================================
+http://askubuntu.com/questions/31023/how-to-configure-eth0-manually
+===========================================================================================
+cp -r /eski/dizin /kopyalanacak/dizin  
+===========================================================================================
+sudo chmod 777 -R /var/www/html/deneme 
+===========================================================================================
+Güncelleme
+apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
+===========================================================================================
+top - original tool
+htop - adds support to multicore/cpu
+iotop - input/output monitoring
+iftop - network monitoring
+atop - merges previous elements into a single overview
+slabtop – displays a listing of the top caches
+===========================================================================================
+Dosya Bulma
+find . -iname ‘*’ | xargs grep ‘hctbilisim’ -sl  ->KELIME ARAMA
+===========================================================================================
+
+alias yeni_komut="kodlarınız buraya"
+
+unalias silinecek_alias
+
+gedit ~/.bashrc
+
+## Terminal ls çıktısını renklendirir ##
+alias ls='ls --color=auto'
+## ls çıktısını alt alta ve gizli dosyalarla beraber gösterir ##
+alias ll='ls -la'
+## Klasörler arasında geçişler için ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+## Grep komutunun çıktısını renklendirir ##
+alias grep='grep --color=auto'
+## Geçmiş ve Görevlerin kısaltılmış hali ##
+alias h='history'
+alias j='jobs -l'
+## Root girişi yapmak ##
+alias root='sudo -i'
+alias su='sudo -i'
+## Reset / Uyku modu / Shutdown #
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+===========================================================================================
+o anki kullanıcıya ait en fazla CPU harcayan 15 aktif proses
+ps -ef | egrep -v "STIME|$LOGNAME" | sort -r | head -n 15  
+===========================================================================================
+çalışan servisleri görüntüleme
+service --status-all
+===========================================================================================
+netstat -anltp | grep "LISTEN" 
+Linux’ta ağ ayarları ile ilgili dosyalar ve dizinler aşağıdaki gibidir :
+/etc/sysconfig/network
+/etc/sysconfig/network-scripts dizini 
+/etc/hosts 
+/etc/resolv.conf
+/etc/nsswitch.conf
+/etc/services
+===========================================================================================
+Grep Kullanımı
+
+2.00 bulunan tüm satirlari
+grep '12.00' /home/david/backup/log.txt  (saat 12.00 bulunan tüm satirlari listeler)
+
+grep -v '12.00' /home/david/backup/log.txt (12.00 bulunduran satirlar disindaki tüm satirlari listeler)
+
+grep -l 'delay' /code/*.c 
+ /code dizininde .c uzantili dosyalardan icinde “delay” yazisi bulunanlarin dosyaların adlarini listeler
+
+ grep -w ‘watch\>’ * (Derin arama  “watch” ile biten kelimelerin oldugu satirlari arar.)
+
+du | grep 'php' | more  (bulunduğu dizindeki tüm php dosyalarını gösterir)
+
+grep ' ^ #' /home/david/script1 | more   (home/david/script1 dosyasindan ‘#’ ile baslayan satirlari gösterir. ‘^#’ bize , #’in ilgili satirin ilk karakteri olmasi gerekliligini anlatir)
+
+grep -v ' ^ [0-9]' /home/david/backup/log.txt | more (/home/david/backup/log.txt dosyasinda ilk karakteri 0-9 arasindaki sayilar olan satirlarin disindaki satirlari listeler)
+
+Grep icin bazi önemli parametreler
+
+-v
+komutun davranisini tersine cevirir. Örnegin , sablona uygun olanlari göstermesi gerekirken uymayanlari listeler.
+
+-c
+Standart raporlamayi (yani satirlarin hepsini göstermeyi) keser ve sadece sablona uyan satirlarin sayisini gösterir.
+
+-i
+Arama sirasinda büyük/kücük harf eslestirmesi yapmaz
+
+-w
+sablonun baska bir kelime icinde olmayip , kendi basina bir kelime olup olmadigini denetler. Böylece , “bay” kelimesi icin arama yaptiginizda “baywatch” ile ilgili satirlar ekrana gelmez.
+
+-l
+sablona uygun satirlarin bulundugu dosya adlarini listeler.
+
+-r
+parametreden sonra verilen dizinin ,alt dizininlerinde de verilen sablona uygun arama yapar. (recursive)
+
