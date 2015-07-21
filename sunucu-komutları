@@ -27,3 +27,75 @@ sudo /etc/init.d/mysql start>
 *Yapılan değişiklerin doğru yapılıp yapılmadığını kontrol ediniz 
 mysql -u root -p>
 yeni şifrenizi girmeniz lazım
+
+*Centos Bellek Kullanımı Komutları
+
+[root@hydra]$  df -h
+\Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-LogVol00
+                      3.9G  3.2G  490M  87% /
+/dev/sda1              99M   13M   82M  14% /boot
+tmpfs                 1.5G     0  1.5G   0% /dev/shm
+/dev/sdb1             1.4T  1.1T  340G  76% /home
+
+[root@hydra]$  du -ks /var/* | sort -nr | head
+75556   /var/cache
+60136   /var/lib
+31296   /var/log
+30364   /var/clamav
+18380   /var/spool
+9640    /var/www
+224     /var/run
+84      /var/webmin
+36      /var/lock
+32      /var/empty
+
+[root@hydra /]$  du --max-depth=1 -x -h /
+8.0K    /selinux
+0       /misc
+8.0K    /mnt
+78M     /lib
+0       /net
+0       /proc
+128M    /etc
+8.0K    /media
+132M    /opt
+5.3M    /root
+194M    /var
+2.7G    /usr
+84K     /tmp
+29M     /sbin
+8.0K    /srv
+4.0K    /home
+0       /sys
+7.2M    /bin
+2.0K    /boot
+16K     /lost+found
+0       /dev
+3.2G    /
+
+Going into my /usr and running du --max-depth=1 -x -h / gives me this:
+
+[root@hydra usr]$  du --max-depth=1 -x -h /
+8.0K    /selinux
+0       /misc
+8.0K    /mnt
+78M     /lib
+0       /net
+0       /proc
+128M    /etc
+8.0K    /media
+132M    /opt
+5.3M    /root
+194M    /var
+2.7G    /usr
+84K     /tmp
+29M     /sbin
+8.0K    /srv
+4.0K    /home
+0       /sys
+7.2M    /bin
+2.0K    /boot
+16K     /lost+found
+0       /dev
+3.2G    /
