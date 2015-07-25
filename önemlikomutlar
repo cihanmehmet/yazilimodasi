@@ -7,7 +7,15 @@ En son yüklennen programları verir
 cat ~/.bash_history | grep -E "apt|pacman|yum|dnf|zypper|emerge|pisi|pacaur|yaourt" | tail
 ===========================================================================================
 sudo iptables -L
+===========================================================================================
+İPTABLES ile ilgili Ubuntu https://help.ubuntu.com/community/IptablesHowTo
+İPTABLES CENTOS  http://wiki.centos.org/HowTos/Network/IPTables 
+
+SSH Centos http://wiki.centos.org/HowTos/Network/SecuringSSH
+===========================================================================================
+SSH portunu açar
 sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+===========================================================================================
 cat /etc/services | grep 22
 ===========================================================================================
 Hangi servere mail göndereceğini DNS'nin MX kaydına bakarak gönderir
