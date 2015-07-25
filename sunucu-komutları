@@ -1,4 +1,7 @@
 ===================================================================================================
+nginx sistemlerde kodlar /usr/share/nginx/html/ dizininde
+apache2 sitemlerde kodlar /var/www/htm dizininde bulunur
+===================================================================================================
 Sunucu Kullanıcı ve Grup İşlemleri
 
 Kullanıcı ekleme işlemlerini useradd, özellik değiştirmeyi usermod komutlarıyla hallederiz
