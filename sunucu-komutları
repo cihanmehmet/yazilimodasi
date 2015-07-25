@@ -1,10 +1,65 @@
+===================================================================================================
+Sunucu Kullanıcı ve Grup İşlemleri
+
+Kullanıcı ekleme işlemlerini useradd, özellik değiştirmeyi usermod komutlarıyla hallederiz
+Useradd [seçenekler] kullanıcı_ismi
+Usermod [seçenekler] kullanıcı_ismi
+
+
+Seçenekler                     Açıklama
+-b,   --base-dir BASE_DIR     Satır Sayılarını gösterir.
+-c, --comment COMMENT         Kullanıcı hakkında detay bilgi,yorum
+
+-d, --home-dir HOME_DIR       Kullanıcının ev dizini belirtilir.
+
+-e, --expiredate EXPIRE_DATE  Kullanıcı hesabının geçersiz olma zamanı. YYYY-MM-DD formatında olacak.
+
+-f, --inactive INACTIVE       Şifre süresi bittikten sonra kullanıcı hesabının ne kadar sürede geçersiz olacağını belirtir. 
+                              0 -> şifre süresi dolarsa hesap hemen geçersiz olur, 
+                              1 -> şifre süresi dolsa da hesap geçersiz hale gelmez.
+
+-g, --gid GROUP               Kullanıcının primary grup ismi burada verilir.
+
+-G, --groups GROUPS          Kullanıcının secondary grup isimleri burada verilir.
+
+-h, --help                   Komut hakkında yardım almak için.
+
+-m, --create-home            Kullanıcının –d seçeneği ile verilen ev dizini oluşturulsun demektir.
+
+-s, --shell SHELL            Kullanıcının shell’i. Linux sistemlerde genellikle standart olarak /bin/bash olarak verilir.
+
+-u, --uid UID                Kullanıcının user ID’si denilen eşsiz sistem kimlik numarası. >500 olmalıdır.
+
+ 
+Usermod komutu için ek seçenekler
+Seçenekler                   Açıklama
+-l, --login NEW_LOGIN       Kullanıcının LOGIN ismi için farklı bir ifade verilmesi
+
+-L, --lock                  Kullanıcı hesabına kilit konulması.
+
+-m, --move-home             Kullanıcının ev dizinini başka bir yere taşımak için.
+
+-U, --unlock                Kullanıcı hesabındaki kilidi kaldırmak için.
+
+CentOS Linux sistemlerde kullanıcı bilgileri /etc/passwd , grup bilgileri /etc/group,şifre ve diğer bilgiler 
+/etc/shadow, kullanıcılarla ilgili genel standart bilgiler /etc/login.defs dosyalarında bulunur.
+
+daha fazlası için 
+
+http://www.cozumpark.com/blogs/linux_unix/archive/2012/03/18/linux-sistemlerde-kullanici-ve-grup-yonetimi-bolum-6.aspx
+
+
+===================================================================================================
 *Mysql üzerinde işlem yapabilmek için mysql servisini kapatmalıyız*
    sudo service mysql stop > prefix text with >
 sudo /etc/init.d/mysql stop >
+===================================================================================================
   * CentOS, Fedora, ve RHEL için komut şudur:*
 sudo /etc/init.d/mysqld stop >
+===================================================================================================
 *Mysql servisini güvenli modda başlatmalıyız*
    sudo mysqld_safe --skip-grant-tables &>
+===================================================================================================   
 *Mysql ile oturum açarız*
   mysql -u root>
 *Şifre işlemlerinin tutulduğu sql'i seçeriz*
@@ -14,6 +69,7 @@ update user set password=PASSWORD("YENİ ŞİFRE") where user='root';>
 *Veritabanına değişikleri uygulaması için;*
   flush privileges; >
 *Mysql servisi tekrardan başlatılmalı*
+===================================================================================================
 Ubuntu ve Debian sistemlerde:
 sudo service mysql start >
 sudo service mysql restart
@@ -23,6 +79,7 @@ sudo /etc/init.d/mysql start>
 sudo /etc/init.d/mysqld restart>
 sudo /etc/init.d/mysqld stop
 sudo /etc/init.d/mysql start>
+===================================================================================================
 *Oturum Açma*
 *Yapılan değişiklerin doğru yapılıp yapılmadığını kontrol ediniz 
 mysql -u root -p>
