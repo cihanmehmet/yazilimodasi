@@ -1,3 +1,7 @@
+
+===========================================================================================
+En son yüklennen programları verir 
+cat ~/.bash_history | grep -E "apt|pacman|yum|dnf|zypper|emerge|pisi|pacaur|yaourt" | tail
 ===========================================================================================
 sudo iptables -L
 sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
