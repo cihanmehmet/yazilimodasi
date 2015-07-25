@@ -1,4 +1,7 @@
-
+===========================================================================================
+ Tar dosyaları oluşturma  tar zcvf oluşturulacak_dosya_adi.tar.gz oluşturulmak_istenen_dosya_adi/
+ 
+Tar dosyaları açma       tar ztvf açılması_istenilen_dosya_adi.tar.gz
 ===========================================================================================
 Portun çalışıp çalışmmadığını anlamak için kullanılır, örn 465
 ss -tnlp|grep 465
