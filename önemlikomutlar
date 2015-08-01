@@ -1,5 +1,6 @@
 ===========================================================================================
- Tar dosyaları oluşturma  tar zcvf oluşturulacak_dosya_adi.tar.gz oluşturulmak_istenen_dosya_adi/
+find / -type d -name 'httpdocs' istediğin klasörü arama
+ tar dosyaları oluşturma  tar zcvf oluşturulacak_dosya_adi.tar.gz oluşturulmak_istenen_dosya_adi/
  
 Tar dosyaları açma       tar ztvf açılması_istenilen_dosya_adi.tar.gz
 ===========================================================================================
