@@ -1,3 +1,7 @@
+ ===================================================================================================
+ ps aux | awk '{sum+=$6} END {print sum / 1024}' Resident memory
+ ps aux | awk '{sum+=$5} END {print sum / 1024}' Virtual memory﻿
+ http://how-to.linuxcareer.com/learning-linux-commands-awk  
 ===================================================================================================
 nginx sistemlerde kodlar /usr/share/nginx/html/ dizininde
 apache2 sitemlerde kodlar /var/www/htm dizininde bulunur
