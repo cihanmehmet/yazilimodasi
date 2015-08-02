@@ -1,6 +1,8 @@
  ===================================================================================================
  ps aux | awk '{sum+=$6} END {print sum / 1024}' Resident memory
  ps aux | awk '{sum+=$5} END {print sum / 1024}' Virtual memory﻿
+ ps aux --sort -rss  /*bellek kullanımı*/ ,
+ http://www.commandlinefu.com/commands/view/3/display-the-top-ten-running-processes-sorted-by-memory-usage
  http://how-to.linuxcareer.com/learning-linux-commands-awk  
 ===================================================================================================
 nginx sistemlerde kodlar /usr/share/nginx/html/ dizininde
