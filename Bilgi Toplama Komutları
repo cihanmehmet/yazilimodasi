@@ -1,0 +1,49 @@
+========================================================================================================
+Bir siteye ait tüm subdoinlerini bulma
+theharvester -d yazilimodasi.com -l 500 -b all
+========================================================================================================
+DNS kaydı öğrenme
+dig www.yazilimodasi.com
+dig www.yazilimodasi.com @8.8.8.8cat /etc/resolv.conf 
+dig linux.org.tr
+dig ns linux.org.tr 
+dig mx google.com.tr
+dig axfr linux.org.tr @frig.linux.org.tr  //zone tranafer yapar
+
+
+dig www.yazilimodasi.com
+   85  dig www.yazilimodasi.com @8.8.8.8
+   86  cat /etc/resolv.conf 
+   87  dig linux.org.tr
+   88  dig ns linux.org.tr 
+   89  dig mx linux.org.tr
+   90  dig mx google.com.tr
+   91  history
+   92  dig soa linux.org.tr
+   93  dig any linux.org.tr
+   94  dig soa linux.org.tr
+   95  dig any linux.org.tr
+   96  dig spf linux.org.tr @trakya.dig www.yazilimodasi.com
+   97  dig spf linux.org.tr @trakya.linux.org.tr
+   98  dig spf gmail.com @8.8.8.8
+   99  clear
+  100  dig --help
+  101  dig -h
+  102  dig txt gmail.com @8.8.8.8
+  103  dig spf mynet.com 
+  104  dig ns .
+  105  dig ns linux.org.tr
+  106  dig www.linux.org.tr @trakya.linux.org.tr
+  107  dig www.linux.org.tr
+  108  dig -x 139.179.139.181
+  109  dig www.yazilimodasi.com
+  110  dig axfr linux.org.tr
+  111  dig axfr linux.org.tr @8.8.8.8
+  112  cat /etc/resolv.conf 
+  113  dig ns linux.org.tr
+  114  dig axfr linux.org.tr @frig.linux.org.tr
+  115  dig axfr @ns12.zoneedit.com zonetransfer.me
+  116  dig zonetransfer.me
+
+
+
