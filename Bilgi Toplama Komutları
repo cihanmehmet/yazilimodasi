@@ -21,38 +21,208 @@ dig axfr linux.org.tr @frig.linux.org.tr  //zone tranafer yapar
 
 
 dig www.yazilimodasi.com
-   85  dig www.yazilimodasi.com @8.8.8.8
-   86  cat /etc/resolv.conf 
-   87  dig linux.org.tr
-   88  dig ns linux.org.tr 
-   89  dig mx linux.org.tr
-   90  dig mx google.com.tr
-   91  history
-   92  dig soa linux.org.tr
-   93  dig any linux.org.tr
-   94  dig soa linux.org.tr
-   95  dig any linux.org.tr
-   96  dig spf linux.org.tr @trakya.dig www.yazilimodasi.com
-   97  dig spf linux.org.tr @trakya.linux.org.tr
-   98  dig spf gmail.com @8.8.8.8
-   99  clear
-  100  dig --help
-  101  dig -h
-  102  dig txt gmail.com @8.8.8.8
-  103  dig spf mynet.com 
-  104  dig ns .
-  105  dig ns linux.org.tr
-  106  dig www.linux.org.tr @trakya.linux.org.tr
-  107  dig www.linux.org.tr
-  108  dig -x 139.179.139.181
-  109  dig www.yazilimodasi.com
-  110  dig axfr linux.org.tr
-  111  dig axfr linux.org.tr @8.8.8.8
-  112  cat /etc/resolv.conf 
-  113  dig ns linux.org.tr
-  114  dig axfr linux.org.tr @frig.linux.org.tr
-  115  dig axfr @ns12.zoneedit.com zonetransfer.me
-  116  dig zonetransfer.me
+  
+    nc yazilimodasi.com 80 -v 
+   23  nc 209.208.110.70 4141 -v 
+   24  nc yazilimodasi.com 80 -v 
+   25  nc www.yazilimodasi.com 80 -v 
+   26  nc www.lkd.org.tr 80 -v 
+   27  nc www.yazilimodasi.com 80 -v
+   28  clear
+   29  nc www.lkd.org.tr 80 -v 
+   30  clear
+   31  free -m
+   32  htop
+   33  apt-get upgrade
+   34  apt-get update
+   35  reboot
+   36  nc www.yazilimodasi.com 80 -v
+   37  poweroff
+   38  wireshark 
+   39  apt-get install git
+   40  git status
+   41  git --version
+   42  poweroff
+   43  cd Desktop/Untitled\ Folder/
+   44  chmod 777 -R *
+   45  ll
+   46  ls -ali
+   47  ./run_upgrader.sh 
+   48  cd ..
+   49  cd Desktop/Untitled\ Folder/
+   50  ll
+   51  ls
+   52  ls -ali
+   53  chmod 777 run_upgrader.sh 
+   54  ./run_upgrader.sh 
+   55  cd Desktop/Untitled\ Folder/
+   56  cd ..
+   57  rm -rf Untitled\ Folder/
+   58  cd Linux\ Yaz\ Kampı/
+   59  ls -ali
+   60  chmod 777 -R *
+   61  cd ..
+   62  HashCat 
+   63  hashcat 
+   64  telnet
+   65  telnet www.lkd.org.tr
+   66  telnet www.lkd.org.tr 80
+   67  nc www.barkin.info 80
+   68  halt
+   69  clear
+   70  sudo apt-get install lamp-server^
+   71  service --status-all
+   72  service apache2 start
+   73  sudo apt-get install phpmyadmin
+   74  cd Desktop/
+   75  clear
+   76  unzip DVWA-1.0.8.zip 
+   77  mysql -u root -p
+   78  mysql
+   79  service mysql start
+   80  mysql -u root -p
+   81  htop
+   82  clear
+   83  nslookup 
+   84  nmap yazilimodasi.com -p-
+   85  nmap yazilimodasi.com -p- -sV
+   86  nmap yazilimodasi.com -O -n
+   87  dig www.yazilimodasi.com
+   88  dig www.yazilimodasi.com @8.8.8.8
+   89  cat /etc/resolv.conf 
+   90  dig linux.org.tr
+   91  dig ns linux.org.tr 
+   92  dig mx linux.org.tr
+   93  dig mx google.com.tr
+   94  history
+   95  dig soa linux.org.tr
+   96  dig any linux.org.tr
+   97  dig soa linux.org.tr
+   98  dig any linux.org.tr
+   99  dig spf linux.org.tr @trakya.dig www.yazilimodasi.com
+  100  dig spf linux.org.tr @trakya.linux.org.tr
+  101  dig spf gmail.com @8.8.8.8
+  102  clear
+  103  dig --help
+  104  dig -h
+  105  dig txt gmail.com @8.8.8.8
+  106  dig spf mynet.com 
+  107  dig ns .
+  108  dig ns linux.org.tr
+  109  dig www.linux.org.tr @trakya.linux.org.tr
+  110  dig www.linux.org.tr
+  111  dig -x 139.179.139.181
+  112  dig www.yazilimodasi.com
+  113  dig axfr linux.org.tr
+  114  dig axfr linux.org.tr @8.8.8.8
+  115  cat /etc/resolv.conf 
+  116  dig ns linux.org.tr
+  117  dig axfr linux.org.tr @frig.linux.org.tr
+  118  dig axfr @ns12.zoneedit.com zonetransfer.me
+  119  dig zonetransfer.me
+  120  history
+  121  htop
+  122  netstat -luntp
+  123  netstat -a
+  124  fierce -h
+  125  host -h
+  126  host yazilimodasi.com
+  127  host yazilimodasi.com -a
+  128  host -c  yazilimodasi.com 
+  129  host -c yazilimodasi.com 
+  130  host -C yazilimodasi.com 
+  131  host -d yazilimodasi.com 
+  132  host -l yazilimodasi.com 
+  133  host -aCdlnrTwv yazilimodasi.com
+  134  host -t ns linux.org.tr
+  135  clear
+  136  host -t any linux.org.tr
+  137  host -t txt linux.org.tr
+  138  host -t CNAME linux.org.tr
+  139  host -t A linux.org.tr
+  140  host -t AAAA linux.org.tr
+  141  host -t mx linux.org.tr
+  142  host -t nc linux.org.tr
+  143  host -t ns linux.org.tr
+  144  host -t ptr linux.org.tr
+  145  host -t soa linux.org.tr
+  146  host -a linux.org.tr
+  147  reaver
+  148  clear
+  149  set type=any
+  150  host -t any linux.org.tr
+  151  set
+  152  set > /De so.tx
+  153  pwd
+  154  set > so.txt
+  155  nslookup 
+  156  host -l yazilimodasi.com
+  157  host google.com
+  158  host yazilimodasi.com
+  159  host 188.166.9.77
+  160  host -l 188.166.9.77
+  161  host -4 yazilimoasi.com
+  162  host -t a -R 3 yazilimodasi.com
+  163  host linux.org.tr
+  164  host 139.179.139.181
+  165  host yazilimodasi.com
+  166  host 188.166.9.77
+  167  clear
+  168  history
+  169  host A kali.org
+  170  host kali.org
+  171  clear
+  172  theharvester -d yazilimodasi.com -l 500 -b all
+  173  theharvester -d www.yazilimodasi.com -l 500 -b all
+  174  clear
+  175  ifconfig
+  176  ifconfig -a
+  177  unicornscan 172.16.0/255.128
+  178  ip
+  179  iwconfig
+  180  ifconfig
+  181  cat /etc/resolv.conf 
+  182  unicornscan 172.16.55.2
+  183  ifconfig
+  184  clear
+  185  traceroute yazilimodasi.com
+  186  clear
+  187  nslookup www.linux.org.tr
+  188  nslookup www.linux.org.tr trakya.linux.org.tr
+  189  nslookup www.linux.org.tr akgul.bilkent.edu.tr
+  190  dig ns aitu.edu.tr
+  191  dig aitu.edu.tr
+  192  dig ns ibu.edu.tr
+  193  nslookup www.ibu.edu.tr abant.ibu.edu.tr
+  194  nslookup www.google.com abant.ibu.edu.tr
+  195  nslookup 
+  196  dig www.linux.org.tr
+  197  dig www.google.com
+  198  dig www.google.com.tr @abant.ibu.edu.tr
+  199  clear
+  200  fierce -v
+  201  fierce -dns linux.org.tr
+  202  fierce -dns ibu.edu.tr
+  203  fierce -dns yazilimodasi.com
+  204  poweroff
+  205  tail -f /var/log/
+  206  pstree
+  207  clear
+  208  service apache2 start
+  209  ping lkd.org.tr
+  210  ping ibu.edu.tr
+  211  nslookup 
+  212  dig lkg.org.tr
+  213  dig ns  lkg.org.tr
+  214  host -t ns lkg.org.tr
+  215  host -t ns www.lkg.org.tr
+  216  nslookup www.ibu.edu.tr abant.ibu.edu.tr
+  217  host mehmetince.net
+  218  host 104.28.26.21
+  219  host yazilimodasi.com
+  220  host 188.166.9.77
+  221  nslookup www.ibu.edu.tr abant.ibu.edu.tr
+
 
 
 
