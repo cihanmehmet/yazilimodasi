@@ -1,4 +1,13 @@
 ========================================================================================================
+"Cihan DOĞAN" site:*.gov.tr filetype:xlsx numrange:10000000000-99999999999
+filetype:reg reg HKEY_CURRENT_USER username
+inurl:admin filetype:asp inurl:userlist
+https://www.exploit-db.com/google-hacking-database/
+========================================================================================================
+https://www.shodan.io/
+linux upnp avtech country:tr 
+dünyadaki tüm siteleri ip bazlı ararayan arama motoru http://www.shodanhq.com/
+========================================================================================================
 Bir siteye ait tüm subdoinlerini bulma
 theharvester -d yazilimodasi.com -l 500 -b all
 ========================================================================================================
