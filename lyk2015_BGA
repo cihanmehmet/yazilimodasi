@@ -1,0 +1,14 @@
+Tüm bilgileri verir
+theharvester -d yazilimodasi.com -l 500 -b all
+theharvester -d yazilimodasi.com -l 500 -b google
+theharvester -d yazilimodasi.com -l 500 -b linkedin
+
+site:linkedin.com at BGA
+Sahte Mail Atma Servisi
+Google.com Adına Buradan MAil Atabilirsiniz
+Büyük Serverda mailin gelen headerine bakar
+https://emkei.cz/
+Gelen MAilllerin hangi servislerden geldiğine bakarız ve yukarıdan gelen mailin mx ve reverse dns kaydına bakarız ve maillleri 
+aşağıdaki dns adreslerinden gelmesi lazım
+http://mxtoolbox.com/
+Tabi bu mailler spama düşer kendimiz bir sunucu kurup ve buradan atarsak mail spama düşmez 
