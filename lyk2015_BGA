@@ -14,3 +14,18 @@ http://mxtoolbox.com/
 Tabi bu mailler spama düşer kendimiz bir sunucu kurup ve buradan atarsak mail spama düşmez 
 Bize gelen mail headerleri buraya yazarsak bize daha okunaklı sonuçlar getirir
 http://mxtoolbox.com/EmailHeaders.aspx
+Mail gönderme servisi
+https://sendgrid.com/
+Sosyal Mühendislik Atağı
+
+http://freedns.afraid.org/ Üçretsiz subdomain alma
+setoolkit 
+1
+2
+3
+2
+Sonra kendi ip adresini ya da başka sunucunun ip adresini girebilirsiniz 
+
+bilgiler cd/var/www/html dosyasında bulunmaktadır
+
+
