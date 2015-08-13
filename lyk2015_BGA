@@ -12,3 +12,5 @@ Gelen MAilllerin hangi servislerden geldiğine bakarız ve yukarıdan gelen mail
 aşağıdaki dns adreslerinden gelmesi lazım
 http://mxtoolbox.com/
 Tabi bu mailler spama düşer kendimiz bir sunucu kurup ve buradan atarsak mail spama düşmez 
+Bize gelen mail headerleri buraya yazarsak bize daha okunaklı sonuçlar getirir
+http://mxtoolbox.com/EmailHeaders.aspx
