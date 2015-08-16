@@ -164,11 +164,12 @@ python sqlmap.py -u "http://localhost/DVWA/vulnerabilities/sqli/?id=5&Submit=Sub
 --dbms MySQL -p id
 
 
-------------------------------------------------SQL INJECTION OMER-----------------------------------------------
+=================================================SQL INJECTION OMER=============================================
  sql injectinda eger union gibi ifadeleri girmemize izin verilmemişse uniUNIONon gibi kullanarak bu korumayı 
  aşabiliyorduk bunu str_replace('union','') kullanarak önlemiş olduk.Tüm olarak eklemek istersek
  
- bypas.php?ad=union
+ Adres bypas.php?ad=union
+ ------------------------------------------------------------------------------------------------------------
  $ad=$_GET['ad'];
  while(true)
  {
@@ -179,7 +180,11 @@ python sqlmap.py -u "http://localhost/DVWA/vulnerabilities/sqli/?id=5&Submit=Sub
          }
  }
  echo $ad;
-Yukarıdaki koddaki gibi unionu nasıl yazarsan yaz ekrana basmaz, 3osUNIsasON bunu 3ossas olarak erkrana yazar 
+ -----------------------------------------------------------------------------------------------------------
+Yukarıdaki koddaki gibi unionu nasıl yazarsan yaz ekrana basmaz, 3osUNIsasON bunu 3ossas olarak ekrana yazar.
+
+
+
  
 
 
