@@ -201,6 +201,14 @@ timthumb.php wordpress açığı bi araştır
 RFI(Remote File Inculusin)
 
 site:github.com "exec($_GET[" bu komutu arattır ve linux komutu çalıştırmamıza yardımcı olur
+-------------------------------------------------------------------------------------------------------------
+Injection Çeşitleri
+
+SQL Injection
+Xpath Injection
+Memcache Injection
+Object Injection
+
 
 
 
