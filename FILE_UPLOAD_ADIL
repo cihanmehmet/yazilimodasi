@@ -1,0 +1,8 @@
+
+Dosya yüklemede sakıncalı olan şey dosya resim olabilir ama onun yerine bir sell dosyası yüklenebilir bunun 
+için yüklenen dosyannın uzantı,mine/type,içerik,header,
+
+içerikleri yüklerken http_forwarded_for ile kontrolden geçirip ondan sonra veritabanına ekleriz
+
+resimleri vi açıp resim dosyası binary olrak açıklır ve o dosyanın içerisine c99 sell ve r57 sell http://www.dcvi.net/ gibi 
+shelleri dosyanın içerisine atabiliriz
