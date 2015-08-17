@@ -24,7 +24,9 @@ deneme.site.com -->debug açık olabilir
 56.15.145.187--deneme.site.com
 
 bu sitelerin siteye pink atılıp sonra dnslook'up ile dns adreslerine bakılır
-kendi host dosyamıza "56.15.145.188 dev.site.com" yazarız böylece site debug moda geçebilir  
+kendi host dosyamıza "56.15.145.188 dev.site.com" yazarız böylece site debug moda geçebilir 
+
+google'da o açıklı siteleri bulabilmek için "debug=true" olarak rasttırma yapabiliriz
 
 
 
