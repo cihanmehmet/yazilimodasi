@@ -6,3 +6,7 @@ içerikleri yüklerken http_forwarded_for ile kontrolden geçirip ondan sonra ve
 
 resimleri vi açıp resim dosyası binary olrak açıklır ve o dosyanın içerisine c99 sell ve r57 sell http://www.dcvi.net/ gibi 
 shelleri dosyanın içerisine atabiliriz
+
+bu üstteki yöntemleri denedikten sonra yine yükleniyorsa resmi image uygulama yaparız resmin resim gibi 
+davranıp davranmadığını kontrol ederiz.örneğin resme width ve hight ile oynarız eğer olumlu sonuç vermezse sell'li dosyadır
+
