@@ -9,4 +9,4 @@ shelleri dosyanın içerisine atabiliriz
 
 bu üstteki yöntemleri denedikten sonra yine yükleniyorsa resmi image uygulama yaparız resmin resim gibi 
 davranıp davranmadığını kontrol ederiz.örneğin resme width ve hight ile oynarız eğer olumlu sonuç vermezse sell'li dosyadır
-
+bunu önlemek için /var/www/lyk15/upload klasörü içerisindeki dosyalara çalıştırma izni vermeyiz 
