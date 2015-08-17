@@ -12,4 +12,19 @@ davranıp davranmadığını kontrol ederiz.örneğin resme width ve hight ile o
 bunu önlemek için /var/www/lyk15/upload klasörü içerisindeki dosyalara çalıştırma izni vermeyiz 
 
 ------------------SQL ınlectıon---------------------
-site.com/ ya da index.aspx? debug=true   tüm verileri ekrana verebilir
+site.com/ ya da index.aspx? debug=true   tüm verileri ekrana verebilir.bunlar sitelerin test sitelerinde debug lar
+açık olur böylelikle sitenin tüm verilerine ulaşabilirsiniz
+dev.site.com  -->debug açık olabilir
+test.site.com -->debug açık olabilir
+deneme.site.com -->debug açık olabilir
+
+
+56.15.145.187--site.com
+56.15.145.188--dev.site.come
+56.15.145.187--deneme.site.com
+
+bu sitelerin siteye pink atılıp sonra dnslook'up ile dns adreslerine bakılır
+kendi host dosyamıza "56.15.145.188 dev.site.com" yazarız böylece site debug moda geçebilir  
+
+
+
