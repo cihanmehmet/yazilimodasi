@@ -6,3 +6,6 @@ dosya img,jpeg,png,gif gibi kısıtlamalar koyarız.Dosya tipini dosya adnından
 Bizim kabul ettiğimiz dosya formatları yüklenmelidir
 3)Content-Type
 4)Resimlere tüm kullanıcılar erişemeli, dosyaların lokasyonlarından diğer dosyalara ulaşılmamalı
+5)Dosya İsimleri 
+6)File Size-  yüklenecek dosyanın belli bir boyutu olmalıdır yoksa büyük boyutlu bir dosya yüklenebilir
+7)Binary olarak dosyanın içeriğine bakılmalır 
