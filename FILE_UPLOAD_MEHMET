@@ -14,3 +14,4 @@ touch a.txt
 file a.txt
 burada ilk bitleri kontrol etmek yetmez a.txt dosyasına içerisine <?php echo "cihan"; ?> yazarsak file a.txt dersek bunu 
 php dosyası olarak görür.
+
