@@ -1,0 +1,5 @@
+Yüklenen dosyanın kontrolü nasıl yapılır
+Dosya yüklenirken 
+1)Resim Galerisi
+2)White Liste(Tüm hespini yasaklamamalıyız bizim kullanacağımız dosya formatının uzantısını kontrol ederiz yüklenen 
+dosya img,jpeg,png,gif gibi kısıtlamalar koyarız.Dosya tipini dosya adnın
