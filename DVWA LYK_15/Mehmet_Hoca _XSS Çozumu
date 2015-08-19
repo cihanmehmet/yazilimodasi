@@ -5,7 +5,7 @@ http://djangoxss.mdisec.com/?payload=%0Aalert%281%29%3B%2f%2f
 
 http://djangoxss.mdisec.com/?payload=
 alert(1);//
-bu sorunu çözmek için pojelerdegereksiz yere yorum satırı kullanılmamalı, 
+bu sorunu çözmek için pojelerdegereksiz yere yorum satırı kullanılmamalı,yorum satırına kod yazolmaz
 <script>
             // var payload= 'dad';
 </script>
