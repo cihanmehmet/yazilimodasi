@@ -13,3 +13,6 @@ https://jex.im/regulex/#!embed=false&flags=&re=^%28a|b%29*%3F%24
  XSS Online Site
 http://escape.alf.nu/0/ alert(1)
 http://prompt.ml/0 prompt(1)
+
+javascript:alert(1) burada (1) iki kere URL_ENCODE yapıldı
+mdisec.com/h4ckm3/xss-3/?URL=javascript:alert%25281%2529//://
