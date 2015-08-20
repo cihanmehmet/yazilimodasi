@@ -9,3 +9,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html önemli deneme yanılma sitel
 Regulexlerin çalışıp çalımadığını online kontrol etme
 https://regex101.com/
 https://jex.im/regulex/#!embed=false&flags=&re=^%28a|b%29*%3F%24
+
+ XSS Online Site
+http://escape.alf.nu/0/ alert(1)
+http://prompt.ml/0 prompt(1)
