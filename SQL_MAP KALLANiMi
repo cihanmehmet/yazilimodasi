@@ -2,7 +2,7 @@ SQL MAP Kullanımı
 
 DATABASE Bulma
 
-sqlmap -u "http://www.hackle.com/index.php?id=19" --dbms
+sqlmap -u "http://www.hackle.com/index.php?id=19" --dbs
 
 TABLO Bulma
 
